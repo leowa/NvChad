@@ -71,6 +71,15 @@ autocmd("FileType", {
   end,
 })
 
+-- disable cmp for markdown files
+-- https://github.com/NvChad/NvChad/discussions/2397
+autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    require("cmp").setup.buffer {enabled = false}
+  end,
+})
+
 -- reload some chadrc options on-save
 autocmd("BufWritePost", {
   pattern = vim.tbl_map(function(path)
