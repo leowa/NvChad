@@ -43,7 +43,11 @@ local default_plugins = {
       end, 0)
     end,
   },
-
+  {
+    "pocco81/autosave.nvim",
+    branch = "main",
+    lazy = false,
+  },
   {
     "nvim-tree/nvim-web-devicons",
     opts = function()
