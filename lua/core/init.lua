@@ -42,6 +42,11 @@ opt.termguicolors = true
 opt.timeoutlen = 400
 opt.undofile = true
 
+-- enable spell check
+-- https://johncodes.com/posts/2023/02-25-nvim-spell/
+opt.spelllang = "en_us"
+opt.spell = true
+
 -- interval for writing swap file to disk, also used by gitsigns
 opt.updatetime = 250
 
